@@ -42,12 +42,17 @@
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
+                    onclick="openLink()"
                 ></a-entity>
             </a-marker>
 
             <a-entity camera></a-entity>
         </a-scene>
-                     <!-- Added hyperlink -->
-            <a href="https://www.google.com" target="_blank">Go to Google</a>
+
+        <script>
+            function openLink() {
+                window.open('https://www.google.com', '_blank');
+            }
+        </script>
     </body>
 </html>
