@@ -42,23 +42,18 @@
                 <a-entity
                     id="bowser-model"
                     scale="0.006123012348914227 0.006123012348914227 0.006123012348914227"
+                    gltf-model="#animated-asset"
                     animation-mixer="loop: repeat"
                     class="clickable"
                     gesture-handler
                 >
-                     <!-- Original GLB model -->
-                    <a-entity
-                        gltf-model="#animated-asset"
-                    ></a-entity>
-                    <!-- New GLB parent -->
                 </a-entity>
-                <a-entity
-                         position="0 0.2 0" 
-                       scale="0.006123012348914227 0.006123012348914227 0.006123012348914227"
-                        gltf-model="#share-asset"
-                    ></a-entity>
-                
             </a-marker>
+            <a-entity
+                position="0 0.2 0" 
+                scale="0.006123012348914227 0.006123012348914227 0.006123012348914227"
+                gltf-model="#share-asset"
+            ></a-entity>
 
             <a-entity camera></a-entity>
         </a-scene>
